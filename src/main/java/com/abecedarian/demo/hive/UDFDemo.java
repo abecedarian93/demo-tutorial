@@ -17,6 +17,8 @@ import java.util.Date;
 
 /**
  * Created by abecedarian on 2019/2/22
+ *
+ * hive-UDF demo
  */
 public class UDFDemo extends GenericUDF {
 
