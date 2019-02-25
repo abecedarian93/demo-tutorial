@@ -23,7 +23,7 @@ import org.apache.spark.{SparkConf, SparkContext}
   * ${jarPath}/market_statistics-jar-with-dependencies.jar \
   * ${input} ${output} ${numPartitions}
   *
-  *@jarPath jar路径 （/home/q/work/market_statistics/market_statistics/market_statistics_offline）注意：先执行build.sh打包
+  *@jarPath jar路径
   *@input 文件输入路径 (/user/wirelessdev/result/demo/mr/input/wordcount.txt)
   *@output 文件输出路径 (/user/wirelessdev/result/demo/spark/output/wordcount)
   *@numPartitions 文件输出分区个数 (2)
