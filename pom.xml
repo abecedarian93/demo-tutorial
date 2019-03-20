@@ -147,6 +147,12 @@
             <artifactId>jedis</artifactId>
             <version>3.0.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.openstreetmap.osmosis</groupId>
+            <artifactId>osmosis-core</artifactId>
+            <version>0.43.1</version>
+        </dependency>
     </dependencies>
 
 
