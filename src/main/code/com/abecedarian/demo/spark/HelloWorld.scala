@@ -6,7 +6,7 @@ import org.apache.spark.{SparkConf, SparkContext}
   * Created by abecedarian on 2019/3/28
   *
   */
-object SparkHelloWorld extends App {
+object HelloWorld extends App {
 
   override def main(args: Array[String]): Unit = {
 
