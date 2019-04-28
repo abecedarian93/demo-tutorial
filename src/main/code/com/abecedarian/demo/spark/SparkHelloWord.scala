@@ -15,7 +15,7 @@ object SparkHelloWord extends App {
     conf.setMaster("local[2]")
     val sc = new SparkContext(conf)
 
-    val lines = sc.parallelize(Seq("hello world", "hello demo-tutorial"))
+    val lines = sc.textFile("data/spark/hellowork.txt")
     val wc = lines.flatMap(_.split(" ")).map(word => (word, 1)).reduceByKey(_ + _)
     wc.foreach(println)
 
