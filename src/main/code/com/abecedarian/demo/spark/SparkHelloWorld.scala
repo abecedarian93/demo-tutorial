@@ -6,7 +6,7 @@ import org.apache.spark.{SparkConf, SparkContext}
   * Created by abecedarian on 2019/3/28
   *
   */
-object SparkHelloWord extends App {
+object SparkHelloWorld extends App {
 
   override def main(args: Array[String]): Unit = {
 
@@ -15,7 +15,7 @@ object SparkHelloWord extends App {
     conf.setMaster("local[2]")
     val sc = new SparkContext(conf)
 
-    val lines = sc.textFile("data/spark/hellowork.txt")
+    val lines = sc.textFile("data/spark/helloworld.txt")
     val wc = lines.flatMap(_.split(" ")).map(word => (word, 1)).reduceByKey(_ + _)
     wc.foreach(println)
 
