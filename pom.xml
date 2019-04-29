@@ -265,7 +265,14 @@
             <resource>
                 <directory>${environment}</directory>
             </resource>
+
+            <resource>
+                <directory>data/</directory>
+                <targetPath>${project.build.outputDirectory}/data/</targetPath>
+            </resource>
         </resources>
+
+
     </build>
 
 
