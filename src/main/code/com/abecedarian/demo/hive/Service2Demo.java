@@ -18,7 +18,7 @@ public class Service2Demo {
     static {
         try {
             Class.forName(driverName);
-            hiveConnection = DriverManager.getConnection("jdbc:hive2://l-livedata1.wap.cn1.qunar.com:10000", "", "");
+            hiveConnection = DriverManager.getConnection("jdbc:hive2://localhost:10000", "wirelessdev", "");
             hiveStat = hiveConnection.createStatement();
             hiveStat.executeQuery("use wirelessdata");
             hiveStat.executeQuery("set mapred.job.queue.name = wirelessdev");
