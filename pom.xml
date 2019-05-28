@@ -112,6 +112,12 @@
             </exclusions>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.11</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+
 
         <!-- es java client -->
         <dependency>
@@ -182,6 +188,12 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.45</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.sentry</groupId>
+            <artifactId>sentry</artifactId>
+            <version>1.7.16</version>
         </dependency>
     </dependencies>
 
@@ -280,12 +292,9 @@
         <resources>
             <resource>
                 <directory>${environment}</directory>
-            </resource>
-
-            <resource>
-                <directory>data/</directory>
                 <targetPath>${project.build.outputDirectory}/data/</targetPath>
             </resource>
+
         </resources>
 
 
