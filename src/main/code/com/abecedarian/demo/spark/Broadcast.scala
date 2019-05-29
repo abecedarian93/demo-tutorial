@@ -5,6 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * Created by abecedarian on 2019/5/29
   *
+  * Spark Broadcast(广播变量) 入门demo
   */
 object Broadcast extends App {
 
