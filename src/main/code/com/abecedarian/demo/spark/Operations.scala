@@ -6,16 +6,16 @@ import org.apache.spark.{SparkConf, SparkContext}
   * Created by abecedarian on 2019/2/25
   *
   */
-object SparkOperationsDemo extends App {
+object Operations extends App {
 
   override def main(args: Array[String]): Unit = {
 
     val conf = new SparkConf()
-
-    /** 本地debug开启 **/
-    conf.setAppName("AccumulatorDemo_abecedarian")
+    conf.setAppName("Operations_abecedarian")
     conf.setMaster("local[2]")
     val sc = new SparkContext(conf)
+
+
     val rdd = sc.parallelize(Seq("abecedarian-01", "abecedarian-01", "abecedarian-02", "abecedarian-03", "abecedarian-04", "abecedarian-05", "abecedarian-06", "abecedarian-07", "abecedarian-08"), 3)
     val pairRdd = sc.parallelize(Seq(("abecedarian", "01"), ("abecedarian", "02"), ("abc", "01"), ("abc", "02"), ("abc", "03"), ("abcd", "01")))
     val pair2Rdd = sc.parallelize(Seq(("abecedarian", "01-2"), ("abecedarian", "02-2"), ("abc", "01-2"), ("abc", "02-2"), ("abcf", "03-2"), ("abcf", "01-2")))

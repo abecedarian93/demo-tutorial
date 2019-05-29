@@ -10,12 +10,12 @@ import org.apache.spark.{SparkConf, SparkContext}
   *
   * spark 读取orc格式文件
   */
-object OrcIODemo extends App {
+object OrcIO extends App {
 
   override def main(args: Array[String]): Unit = {
 
     val conf=new SparkConf()
-    conf.setAppName("orcIODemo_abecedarian")
+    conf.setAppName("orcIO_abecedarian")
     conf.setMaster("local[2]")
     val sc = new SparkContext(conf)
 
